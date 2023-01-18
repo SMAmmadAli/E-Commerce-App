@@ -1,5 +1,6 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:st_store/utils/color.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
@@ -23,25 +24,25 @@ class _BottomNavBarState extends State<BottomNavBar> {
           }),
           items: [
             BottomNavyBarItem(
-              icon: const Icon(Icons.bungalow_outlined),
-              title: const Text('Home'),
-              activeColor: const Color(0xffC6AB59),
-            ),
+                icon: const Icon(Icons.bungalow_outlined),
+                title: const Text('Home'),
+                activeColor: MyColors.gold,
+                inactiveColor: MyColors.black),
             BottomNavyBarItem(
-              icon: const Icon(Icons.search),
-              title: const Text('Search'),
-              activeColor: const Color(0xffC6AB59),
-            ),
+                icon: const Icon(Icons.search),
+                title: const Text('Search'),
+                activeColor: MyColors.gold,
+                inactiveColor: MyColors.black),
             BottomNavyBarItem(
-              icon: const Icon(Icons.shopping_bag_outlined),
-              title: const Text('Shapping'),
-              activeColor: const Color(0xffC6AB59),
-            ),
+                icon: const Icon(Icons.shopping_bag_outlined),
+                title: const Text('Shapping'),
+                activeColor: MyColors.gold,
+                inactiveColor: MyColors.black),
             BottomNavyBarItem(
-              icon: const Icon(Icons.person),
-              title: const Text('Profile'),
-              activeColor: const Color(0xffC6AB59),
-            ),
+                icon: const Icon(Icons.person),
+                title: const Text('Profile'),
+                activeColor: MyColors.gold,
+                inactiveColor: MyColors.black),
           ],
         )
         // BottomNavigationBar(

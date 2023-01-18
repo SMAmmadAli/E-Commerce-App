@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:st_store/Pages/dashboard.dart';
 import 'package:st_store/Pages/home_page.dart';
 
 import 'Pages/splash_page.dart';
