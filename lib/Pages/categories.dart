@@ -3,8 +3,8 @@ import 'package:st_store/data/data.dart';
 import 'package:st_store/utils/color.dart';
 import 'package:st_store/widgets/home_page_widget/my_listview2.dart';
 
-class DashboardView extends StatelessWidget {
-  const DashboardView({super.key});
+class MyCategoriesView extends StatelessWidget {
+  const MyCategoriesView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class DashboardView extends StatelessWidget {
                   ],
                 ),
               ),
-            const MyListView2()
+            MyListView2()
           ],
         ),
       ),

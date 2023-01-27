@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 16,
             ),
-            MyListView1(),
+            MyListView(),
             const Divider(
               color: Color(0xffF3F6F8),
               thickness: 5,
