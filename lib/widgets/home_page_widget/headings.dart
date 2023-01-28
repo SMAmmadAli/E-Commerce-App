@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../utils/color.dart';
+
 class MyHeading extends StatelessWidget {
   final String heading;
   const MyHeading({super.key, required this.heading});
@@ -11,9 +13,10 @@ class MyHeading extends StatelessWidget {
       child: Center(
         child: Text(
           heading,
-          style: const TextStyle(
+          style: TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 14,
+            color: MyColors.gold,
           ),
         ),
       ),

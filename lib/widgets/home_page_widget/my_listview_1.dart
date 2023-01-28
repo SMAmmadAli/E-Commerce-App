@@ -33,6 +33,7 @@ MyListView() {
                         height: 150,
                         width: 205,
                         decoration: BoxDecoration(
+                            border: Border.all(color: MyColors.gold, width: 2),
                             color: MyColors.containerbgColor,
                             borderRadius: const BorderRadius.horizontal(
                                 right: Radius.elliptical(32, 80),
@@ -42,18 +43,20 @@ MyListView() {
                           children: [
                             Text(
                               products[index]['title'],
-                              style: const TextStyle(
-                                  fontSize: 14, fontWeight: FontWeight.w700),
+                              style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w700,
+                                  color: MyColors.gold),
                             ),
                             const SizedBox(
                               height: 10,
                             ),
                             Text(
                               products[index]['subTitle'],
-                              style: const TextStyle(
+                              style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
-                                  color: Color(0xff171717)),
+                                  color: MyColors.gold),
                             ),
                             const SizedBox(
                               height: 20,

@@ -16,6 +16,7 @@ MyListView2() {
               height: 220,
               width: 145,
               decoration: BoxDecoration(
+                  border: Border.all(color: MyColors.gold, width: 2),
                   color: MyColors.containerbgColor,
                   borderRadius: BorderRadius.circular(32)),
               child: Column(
@@ -30,18 +31,21 @@ MyListView2() {
                   ),
                   Text(
                     products[index]['title'],
-                    style: const TextStyle(
-                        fontSize: 14, fontWeight: FontWeight.w700),
+                    style: TextStyle(
+                        color: MyColors.gold,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   Text(
                     products[index]['subTitle'],
-                    style: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w400,
-                        color: Color(0xff171717)),
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
+                      color: MyColors.gold,
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
