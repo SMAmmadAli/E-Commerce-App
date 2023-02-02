@@ -5,22 +5,26 @@ List<Map> products = [
   {
     "image": MyImage.micimg,
     "title": MyText.speaker,
-    "subTitle": MyText.speakerSubTitle
+    "subTitle": MyText.speakerSubTitle,
+    "price": "\$1600"
   },
   {
     "image": MyImage.headphoneimg,
     "title": MyText.headphones,
     "subTitle": MyText.headphonesSubTitle,
+    "price": "\$1600"
   },
   {
     "image": MyImage.micimg,
     "title": MyText.speaker,
-    "subTitle": MyText.speakerSubTitle
+    "subTitle": MyText.speakerSubTitle,
+    "price": "\$1600"
   },
   {
     "image": MyImage.headphoneimg,
     "title": MyText.headphones,
     "subTitle": MyText.headphonesSubTitle,
+    "price": "\$1600"
   },
 ];
 

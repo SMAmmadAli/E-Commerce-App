@@ -34,7 +34,7 @@ MyListView() {
                         width: 205,
                         decoration: BoxDecoration(
                             border: Border.all(color: MyColors.gold, width: 2),
-                            color: MyColors.containerbgColor,
+                            color: MyColors.sky,
                             borderRadius: const BorderRadius.horizontal(
                                 right: Radius.elliptical(32, 80),
                                 left: Radius.elliptical(32, 80))),

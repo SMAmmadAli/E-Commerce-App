@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:st_store/Pages/single_product.dart';
 import 'package:st_store/data/data.dart';
 import 'package:st_store/utils/color.dart';
 import 'package:st_store/utils/mytext.dart';
@@ -75,48 +76,58 @@ class _MyCategoriesViewState extends State<MyCategoriesView>
                                 top: 90,
                                 child: Padding(
                                   padding: const EdgeInsets.only(left: 20.0),
-                                  child: Container(
-                                      height: 170,
-                                      width: 245,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 20, top: 20),
-                                            child: Text(
-                                              MyText.headphonesTitle1,
-                                              style: TextStyle(
-                                                fontSize: 24,
-                                                fontWeight: FontWeight.w700,
+                                  child: InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  const SingleProduct()));
+                                    },
+                                    child: Container(
+                                        height: 170,
+                                        width: 245,
+                                        child: Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 20, top: 20),
+                                              child: Text(
+                                                MyText.headphonesTitle1,
+                                                style: TextStyle(
+                                                  fontSize: 24,
+                                                  fontWeight: FontWeight.w700,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding: EdgeInsets.only(
-                                                left: 20, top: 5),
-                                            child: Text(
-                                              MyText.headphonesSubTitle1,
-                                              style: TextStyle(
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w400,
+                                            Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: 20, top: 5),
+                                              child: Text(
+                                                MyText.headphonesSubTitle1,
+                                                style: TextStyle(
+                                                  fontSize: 14,
+                                                  fontWeight: FontWeight.w400,
+                                                ),
                                               ),
+                                            )
+                                          ],
+                                        ),
+                                        decoration: BoxDecoration(
+                                            color: const Color(0xffF3F6F8),
+                                            borderRadius:
+                                                const BorderRadius.horizontal(
+                                              left: Radius.elliptical(32, 80),
+                                              right: Radius.elliptical(32, 80),
                                             ),
-                                          )
-                                        ],
-                                      ),
-                                      decoration: BoxDecoration(
-                                          color: const Color(0xffF3F6F8),
-                                          borderRadius:
-                                              const BorderRadius.horizontal(
-                                            left: Radius.elliptical(32, 80),
-                                            right: Radius.elliptical(32, 80),
-                                          ),
-                                          border: Border.all(
-                                              color: MyColors.gold, width: 2))),
+                                            border: Border.all(
+                                                color: MyColors.gold,
+                                                width: 2))),
+                                  ),
                                 )),
                             Padding(
                               padding: const EdgeInsets.only(left: 40.0),

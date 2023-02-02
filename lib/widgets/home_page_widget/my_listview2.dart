@@ -17,7 +17,7 @@ MyListView2() {
               width: 145,
               decoration: BoxDecoration(
                   border: Border.all(color: MyColors.gold, width: 2),
-                  color: MyColors.containerbgColor,
+                  color: MyColors.sky,
                   borderRadius: BorderRadius.circular(32)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
